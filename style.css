@@ -62,20 +62,25 @@ h1{
     justify-content: start;
     align-items: center;
     flex-direction: row;
+    transition: all 0.42s;
 }
 
 .navbar li:hover{
 
     width: 100%;
+    background-color: #0096b8;
+}
+
+.menu-active{
     background-color: #004a5b;
 }
+
 .navbar a{
     padding: 20px;
     width: 100%;
     color: aliceblue;
     text-decoration: none;
 }
-
 
 section {
     width: 100%;
