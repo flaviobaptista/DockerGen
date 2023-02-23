@@ -1,0 +1,169 @@
+@media print{
+    body * {
+        visibility: hidden;
+    }
+
+    .conteudo{
+        visibility: visible;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+}
+
+
+h1{
+    padding-bottom: 30px;
+}
+
+.content{
+    display: flex;
+}
+
+.sidebar{
+    background-color: #0a0a0a;
+    width: 30vw;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.sidebar::-webkit-scrollbar-track{
+	/*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+	border-radius:0;
+	background-color: #0a0a0a;
+}
+
+.sidebar::-webkit-scrollbar{
+	width: 6px;
+	background-color: #00001c;
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+	border-radius:0;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: aqua;
+}
+
+.navbar{
+    text-align: start;
+    color: aliceblue;
+}
+
+.navbar ul{
+    width: 100%;
+    list-style: none;
+    padding: 0;
+}
+.navbar li{
+    text-decoration: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.navbar li:hover{
+
+    width: 100%;
+    background-color: #004a5b;
+}
+.navbar a{
+    padding: 20px;
+    width: 100%;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+section {
+    width: 100%;
+
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    padding: 20px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.221);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 5px;
+}
+header span {
+    font-size: 12px;
+}
+
+.img-user{
+    width: 80px;
+    height:80px;
+    margin-right: 20px;
+    background-color: rgb(170, 170, 170);
+    border-radius: 50%;
+    background-image: url(img/mulher-de-negocios-vista-frontal-no-escritorio_23-2148347271.avif);
+    background-size: cover;
+}
+
+.content-body{
+    padding: 30px;
+    width: 100%;
+    height: 73.7vh;
+    overflow-y: scroll;
+}
+
+.content-body::-webkit-scrollbar-track{
+	/*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+	border-radius:0;
+	background-color: #ffffff;
+}
+
+.content-body::-webkit-scrollbar{
+	width: 6px;
+	background-color: #00001c;
+}
+
+.content-body::-webkit-scrollbar-thumb{
+	border-radius:0;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #00e1ff;
+}
+.accordion-button{
+    transition: all 0.42s;
+}
+.accordion-button:hover{
+    background-color: aqua;
+}
+
+/* Page Confidencialidade */
+
+.content-body .component-bodyform {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    width: 60vw;
+}
+.content-body .component-line {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.content-body .component {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    width: 77%;
+    background-color: rgb(255, 255, 255);
+    border-top: solid 1px #c7c7c7;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    position: absolute;
+    bottom: 0;
+}
