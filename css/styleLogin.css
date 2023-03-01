@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+/* font-family: 'Doppio One', sans-serif;
+font-family: 'Unbounded', cursive; */
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    width: 100vw;
+    color:#ffffff;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.content{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg, rgb(59, 147, 247), rgb(0, 110, 255));
+}
+.form-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 100vh;
+    background-color: #1a1919;
+}
+
+article{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+    
+}
+h1{
+    color: aqua;
+    font-family: 'Unbounded', cursive;
+}
+h2{
+    letter-spacing: 3px;
+    font-family: 'Prompt', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+}
+h3{
+    font-size: 17pt;
+    font-weight: 700;
+    font-family: 'Prompt', sans-serif;
+}
+h4{
+    width: 700px;
+    font-size: 15pt;
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+}
+li{
+    font-size: 14pt;
+    font-family: 'Prompt', sans-serif;
+}
+input{
+    width: 300px;
+    border: none;
+    border-bottom: solid 1px aqua;
+    padding: 9px;
+    background-color: rgba(255, 255, 255, 0);
+    color: aqua;
+    transition: all 0.42s;
+    display: block;
+    outline: none;
+    font-size: 18px;
+}
+input::placeholder{
+    color: rgb(0, 117, 117);
+    font-size: 18px;
+}
+
+input:focus{
+    box-shadow: rgb(1, 255, 213) 0px 15px 25px -16px;
+    border-radius: 10px;
+}
+
+
+button{
+    width: 200px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+    background-color: aqua;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.42s;
+    border: none;
+
+}
+button:hover{
+    background-color: rgba(0, 255, 255, 0.26);
+    color: aqua;
+    border: solid 1px aqua;
+    font-weight: 700;
+    box-shadow: rgba(0, 238, 255, 0.5) 0px 0px 24px;
+
+}
+
+a{
+    font-size: 12pt;
+    font-family: 'Prompt', sans-serif;
+    color: rgb(162, 213, 255);
+}
+
+a:hover{
+    color: rgb(73, 252, 112);
+}
