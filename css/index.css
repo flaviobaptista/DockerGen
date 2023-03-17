@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand{
+    font-family: 'Unbounded', cursive;
+    color: #0084ff;
+}
+
+.container-primary{
+    height: 400px;
+    background-image: url('../img/bg_doc2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #00ffe1;
+}
+
+.container-primary div{
+    background-color: rgba(0, 0, 0, 0.742);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-primary h2{
+    font-family: 'Unbounded', cursive;
+    font-size: 55px;
+    color: #0084ff;
+    transition: all 0.70s;
+
+}
+.container-primary h2:hover{
+    color: azure;
+}
+
+hr{
+    color: #00ffe1;
+    border: solid 1px; 
+    width: 60vw;
+}
+
+button{
+    padding: 6px 80px;
+    border-radius: 20px;
+    background-color: #00ffe1;
+    border: solid 1px #ffffff00;
+    color: #000000;
+    font-size: 20px;
+    transition: all 0.40s;
+}
+
+button:hover{
+    background-color: rgb(0, 0, 0);
+    border: solid 1px #00ffe1;
+    color: #00ffe1;
+    box-shadow: #00ffe1 0px 0px 10px;
+    letter-spacing: 0.3vw;
+}
+
+li{
+    border-bottom: solid 2px rgba(0, 0, 0, 0);
+    transition: all 0.50s;
+}
+li:hover{
+    border-bottom: solid 2px #0099f9;
+    font-size: 18px;
+}
+.nav-link{
+    color: #0084ff;
+    font-weight: 500;
+    font-size: 18px;
+    transition: all 0.50s;
+
+}
+.nav-link:hover{
+    color: #f96800;
+    letter-spacing: 0.3vw;
+}
+
+.link-system{
+    text-decoration: none;
+    font-size: 18px;
+    color: #f95700;
+}
