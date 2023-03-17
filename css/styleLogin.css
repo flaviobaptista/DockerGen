@@ -20,12 +20,20 @@ body{
 
 }
 
+.logo-pglogin{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.logo-pglogin h1{
+    margin-left: 10px;
+}
 .content{
     width: 60vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(0deg, rgb(59, 147, 247), rgb(0, 110, 255));
+    background: linear-gradient(330deg, rgb(0, 187, 255), rgb(0, 48, 88));
 }
 .form-content{
     display: flex;

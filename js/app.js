@@ -1,5 +1,5 @@
 const user1 = {
-    nome: 'teste@dockergen.com',
+    nome: 'usertest@dockergen.com',
     senha: 'dockergen2',
 }
 
@@ -10,7 +10,7 @@ function validarLogin() {
     let usuario = document.getElementById('user').value;
     let senha = document.getElementById('password').value;
 
-    if (usuario == "teste@dockergen.com" && senha == "dockergen2") {
+    if (usuario == "usertest@dockergen.com" && senha == "dockergen2") {
         window.location.replace('home.html')
     } else if (usuario == "" && senha == "") {
         const warning = document.getElementById('false-log');
