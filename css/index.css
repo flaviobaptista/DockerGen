@@ -92,6 +92,8 @@ body{
 }
 
 .link-system{
+    display: flex;
+    align-items: center;
     text-decoration: none;
     font-size: 18px;
     color: #f95700;
@@ -189,60 +191,26 @@ footer{
 
 /* blog */
 
-.nav-left{
-    width: 25%;
-    height: 100vh;
-    background-color: #8000ff;
-    padding: 30px;
-    text-align: center;
-    color: aliceblue;
-    font-family: 'Unbounded', cursive;
-
-}
-
 .content-blog{
     display: flex;
+    padding: 50px;
+}
 
+.nav-left{
+    width: 25%;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    color: rgb(0, 113, 211);
+    font-family: 'Unbounded', cursive;
+    border-right: solid 1px rgba(0, 0, 0, 0.335);
+    
 }
 
 .content-right{
-
     width: 75%;
-    height: 100vh;
     background-color: #ffffff;
-    padding: 50px;
+    padding-left: 50px;
     color: rgb(0, 0, 0);
-    overflow-y: scroll;
-
-}
-
-.content-right::-webkit-scrollbar-track{
-	/*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
-	border-radius:0;
-	background-color: #ffffff;
-}
-
-.content-right::-webkit-scrollbar{
-	width: 15px;
-	background-color: #00001c;
-}
-
-.content-right::-webkit-scrollbar-thumb{
-	border-radius:0;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #8000ff;
-}
-
-.content-blog-1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.content-blog-1 h4{
-   padding: 20px;
-}
-
-.img-blog{
-    width: 30vw;
 }
 
