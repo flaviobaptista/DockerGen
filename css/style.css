@@ -146,7 +146,7 @@ header span {
 
 input, select{
     width: 80%;
-    border: solid 1px rgb(99, 169, 255);
+    border: solid 1px rgb(100, 169, 254);
     border-radius: 5px;
     padding: 3px;
     background-color: rgb(255, 255, 255);
