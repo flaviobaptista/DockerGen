@@ -35,6 +35,9 @@ body{
     align-items: center;
     background: linear-gradient(330deg, rgb(0, 187, 255), rgb(0, 48, 88));
 }
+img{
+    width: 25vw;
+}
 .form-content{
     display: flex;
     flex-direction: column;
@@ -50,8 +53,6 @@ article{
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
-    
-    
 }
 h1{
     color: aqua;
@@ -130,4 +131,46 @@ a{
 
 a:hover{
     color: rgb(73, 252, 112);
+}
+
+@media only screen and (max-width: 900px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+
+    }
+    .form-content{
+        width: 100%;
+        height: 100%;
+    }
+
+    h2{
+        font-size: 4vw;
+        text-align: center;
+    }
+    h3{
+        font-size: 5vw;
+    }
+
+    h4{
+        font-size: 4vw;
+        width: 90%;
+    }
+    li{
+        font-size: 3vw;
+    }
+    img{
+        width: 55vw;
+    }
+
+
+
 }

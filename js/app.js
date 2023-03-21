@@ -106,3 +106,14 @@ function logoff() {
     localStorage.removeItem('isLoggedin');
     window.location.href = 'login.html';
 }
+
+// Menu mobile
+
+function navBars(){
+    let display = document.getElementById('sidebar').style.display;
+    if(display == "none"){
+        document.getElementById('sidebar').style.display= "block";
+    }else{
+        document.getElementById('sidebar').style.display= "none";
+    }
+}

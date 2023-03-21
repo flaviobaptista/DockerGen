@@ -17,6 +17,10 @@ h1{
     display: flex;
 }
 
+.nv-icon{
+    display: none;
+}
+
 .sidebar{
     background-color: #0a0a0a;
     width: 30vw;
@@ -215,4 +219,28 @@ footer{
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     position: fixed;
     bottom: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    .sidebar{
+        display: none;
+    }
+
+    .user-credentials{
+        margin-left: 40px;
+    }
+    .nv-icon{
+        display: flex;
+        justify-content: center;
+        border: solid 1px rgb(53, 99, 168);
+        padding: 5px 15px 5px 15px;
+        border-radius: 10px;
+        color: #0099ff;
+    }
+
+
+    footer{
+        width: 100%;
+    }
+    
 }
