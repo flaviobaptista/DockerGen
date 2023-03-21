@@ -7,7 +7,7 @@ body{
     border: 0;
     background-color: rgb(255, 255, 255);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-top: 3rem;
+    padding-top: 4rem;
 }
 
 .nav-item{
@@ -251,7 +251,7 @@ footer{
 @media only screen and (max-width: 767px){
 
     h4{
-        font-size: 4vw;
+        font-size: 6vw;
     }
 
     .logo-style{
@@ -269,19 +269,23 @@ footer{
         font-size: 4vw;
     }
 
+    .container-primary{
+        height: 35vh;
+    }
     .container-primary h1{
-        font-size: 5vw;
+        font-size: 7vw;
     }
     .container-primary h2{
-        font-size: 5vw;
+        font-size: 8vw;
     }
 
     .button-log{
-        font-size: 2.5vw;
+        font-size: 4vw;
+        font-weight: 700;
     }
 
     .content-primary-img img{
-        width: 40vw;
+        width: 30vw;
     }
 
     .content-primary{
@@ -291,14 +295,14 @@ footer{
         font-size: 3vw;
     }
     .content-primary h3{
-        font-size: 2.3vw;
+        font-size: 2.8vw;
     }
     .content-primary p{
-        font-size: 1.7vw;
+        font-size: 2vw;
     }
 
     .bg-lgpd{
-        height: 70vh;
+        height: 35vh;
         padding: 0;
     }
 
@@ -361,14 +365,14 @@ footer{
 
 
     .container-primary h1{
-        font-size: 8vw;
+        font-size: 6vw;
     }
     .container-primary h2{
-        font-size: 8vw;
+        font-size: 7vw;
     }
 
     .button-log{
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     .content-primary{
