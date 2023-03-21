@@ -49,6 +49,8 @@ function validarLogin() {
         warning.style.color = "salmon"
         warning.style.fontSize = "16pt"
     }
+
+    
 }
 
 
@@ -97,5 +99,10 @@ function abrirpdf() {
     win.print()
 }
 
+localStorage.setItem('isLoggedin', true);
 
 
+function logoff() {
+    localStorage.removeItem('isLoggedin');
+    window.location.href = 'login.html';
+}

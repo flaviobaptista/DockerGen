@@ -7,7 +7,7 @@ body{
     border: 0;
     background-color: rgb(255, 255, 255);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-top: 6rem;
+    padding-top: 3rem;
 }
 
 
@@ -15,18 +15,19 @@ body{
 .logo-txt{
     font-family: 'Unbounded', cursive;
     color: #0084ff;
-    font-size: 25px;
+    font-size: 2.3vw;
     margin-left: 10px;
     text-decoration: none;
 }
 
 .container-primary{
-    height: 500px;
+    height: 70vh;
     background-image: url('../img/bg_doc2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: #00ffe1;
+    padding: 0;
 }
 
 .container-primary div{
@@ -40,11 +41,15 @@ body{
 
 .container-primary h2{
     font-family: 'Unbounded', cursive;
-    font-size: 55px;
+    font-size: 3vw;
     color: #0084ff;
     transition: all 0.70s;
 
 }
+.container-primary h1{
+    font-size: 3vw;
+}
+
 
 .line{
     color: #00ffe1;
@@ -58,7 +63,7 @@ body{
     background-color: #00ffe1;
     border: solid 1px #ffffff00;
     color: #000000;
-    font-size: 20px;
+    font-size: 1.3vw;
     transition: all 0.40s;
     text-decoration: none;
 }
@@ -102,8 +107,14 @@ body{
 .content-primary{
     display: flex;
     align-items: center;
+    font-size: 1.5vw;
 }
-
+.content-primary-img img{
+    width: 30vw;
+}
+.content-primary-img{
+    text-align: center;
+}
 footer{
     display: flex;
     flex-direction: column;
@@ -119,20 +130,31 @@ footer{
 }
 
 .icon-footer{
-    width: 50px;
+    width: 4vw;
 }
 
 .content-flooter-1{
     display: flex;
     flex-direction: column;
+    font-size: 1.5vw;
+
 }
 
 .content-flooter-2{
     display: flex;
     flex-direction: column;
+    font-size: 1.5vw;
+
+}
+.content-flooter-3{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5vw;
+
 }
 .content-flooter-2 a{
     margin-bottom: 20px;
+
 }
 
 .link-footer{
@@ -214,3 +236,34 @@ footer{
     color: rgb(0, 0, 0);
 }
 
+@media only screen and (max-width: 767px){
+
+    .content-primary-img img{
+        width: 40vw;
+    }
+
+    .content-primary{
+        display: flex;
+        align-items: center;
+        font-size: 3vw;
+    }
+    .content-primary h3{
+        font-size: 5vw;
+    }
+
+    .content-footer{
+        flex-direction: column;
+    }
+
+    .content-flooter-1, .content-flooter-2, .content-flooter-3{
+        margin-bottom: 40px;
+        align-items: center;
+        font-size: 3vw;
+    }
+    .content-footer label{
+        font-size: 4vw;
+    }
+    .content-footer hr{
+        width: 600px;
+    }
+}
