@@ -13,31 +13,36 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md fixed-top bg-body shadow ">
-    <div class="container-fluid ">
-      <img src="img/logo.png" alt="" style="width: 6vw;">
-      <a class="logo-txt" href="index.html">Dockergen</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top ">
+    <div class="container-fluid justify-content-start">
+      <div>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+  
+      <div class="logo-style">
+        <img class="logo-img"  src="img/logo.png" alt="logo">
+        <a class="logo-txt" href="index.html">Dockergen</a>
+    </div>
+
+      <div class="offcanvas offcanvas-start w-75" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header bg-info">
+          <h5 class="offcanvas-title " id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body justify-content-around" id="navbarNav">
-          <ul class="navbar-nav w-25 justify-content-around w-50">
+        <div class="offcanvas-body align-items-center justify-content-around w-100 ">
+          <ul class="navbar-nav justify-content-around flex-grow p-3 w-50">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html#sobre">Sobre</a>
+              <a class="nav-link" href="#sobre">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contato">Blog</a>
-            </li>
-          </ul>
+                <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
+              </li>
+            </ul>
           <a href="html/login.html" class="link-system" target="_blank">Acessar sistema</a>
         </div>
       </div>
