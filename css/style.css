@@ -313,7 +313,7 @@ footer{
     }
 
     .content-body{
-        height: 77vh;
+        height: 75vh;
     }
 
 
@@ -344,6 +344,7 @@ footer{
     footer{
         width: 100%;
         text-align: center;
+        z-index: 1000;
     }
 
     
