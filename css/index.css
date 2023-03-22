@@ -290,19 +290,19 @@ color: aqua;
     }
 
     .container-primary {
-        height: 40vh;
+        height: 50vh;
     }
 
     .container-primary h1 {
-        font-size: 7vw;
+        font-size: 5vw;
     }
 
     .container-primary h2 {
-        font-size: 7vw;
+        font-size: 5vw;
     }
 
     .button-log {
-        font-size: 4vw;
+        font-size: 3vw;
         font-weight: 700;
         max-width: 80%;
     }
@@ -453,6 +453,7 @@ color: aqua;
 
     .button-log {
         font-size: 4vw;
+        padding: 5px 40px;
     }
 
     .content-primary {
