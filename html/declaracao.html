@@ -21,7 +21,7 @@
                     <img src="../img/logo.png" alt="Logo DockerGen">
                     <h2>DockerGen</h2>
                 </div>
-                <button class="btn-close" id="btn-close-bar" onclick="navBars()"></button>
+                <button class="btn-close" id="btn-close-bar" onclick="navBarsClose()"></button>
             </div>
 
             <div class="navbar">
@@ -70,15 +70,14 @@
             <header>
                 <div id="bars-icon" style="position: fixed;">
                     <button type="button" class="nv-icon"  onclick="navBars()">
-                        <i class="fa-solid fa-bars" style="font-size: 30px;"></i>
+                        <i class="fa-solid fa-bars" style="font-size: 20px;"></i>
                     </button>
                 </div>
                 <section class="user-credentials" style="display: flex; align-items: center;">
                     <div class="img-user"></div>
-                    <h5>Laura Sophia Miller <br> <span>Coordenadora Administrativa</span> </h5>
+                    <h5>Laura Sophia Miller <br> <span class="span-credentials">Coordenadora Administrativa</span> </h5>
                 </section>
-                <button class="exit"
-                    style="display: flex; align-items: center; justify-content: space-around ;background-color: rgba(0, 0, 0, 0); border: none; width: 70px;" onclick="logoff()">
+                <button class="exit" onclick="logoff()">
                     sair <i class="fa-sharp fa-solid fa-right-from-bracket" style="color: rgb(252, 80, 1);"></i>
                 </button>
             </header>

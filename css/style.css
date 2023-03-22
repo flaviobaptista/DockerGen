@@ -45,24 +45,30 @@ h1{
 }
 
 .sidebar-header{
-    padding: 30px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
     display: flex; 
+    justify-content: space-between;
     align-items: start;
     justify-content: space-between;
     
 }
-.sidebar-header button{
+.btn-close{
     display: none;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 15px;
     background-color: #01d0ff;
 }
 .sidebar-logo{
     display: flex;
     flex-direction: row; 
     align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 .sidebar-logo img{
+    padding-right: 5px;
     width: 5vw;
 }
 .sidebar-logo h2{
@@ -90,7 +96,6 @@ h1{
 }
 
 .navbar li:hover{
-
     width: 100%;
     background-color: #0096b8;
 }
@@ -104,7 +109,7 @@ h1{
     width: 100%;
     color: aliceblue;
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 }
 
 section {
@@ -126,12 +131,20 @@ header span {
 .img-user{
     width: 80px;
     height:80px;
-    margin-right: 20px;
+    margin-right: 10px;
     background-color: rgb(170, 170, 170);
     border-radius: 50%;
     background-image: url(../img/Laura_Sophia_Miller.jpg);
     background-position: center;
     background-size: cover;
+}
+
+.exit{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around ;background-color: rgba(0, 0, 0, 0); 
+    border: none; 
+    width: 70px;
 }
 
 .content-body{
@@ -251,25 +264,33 @@ footer{
         display: none;
         position: fixed;
         z-index: 1000;
-        width: 85%;
+        width: 45%;
+    }
+
+    .btn-close{
+        display: block;
     }
 
     .user-credentials{
         margin-left: 65px;
         display: flex;
-        justify-content: center;
+        justify-content: start;
     }
 
     .img-user{
-        max-width: 65px;
-        max-height: 65px;
+        max-width: 55px;
+        max-height: 55px;
     }
     .user-credentials h5{
-        font-size: 2.5vw;
+        font-size: 2vw;
         font-weight: 700;
     }
     .span-credentials{
-        font-size: 2vw;
+        font-size: 1.5vw;
+    }
+
+    .sidebar-header{
+        margin-bottom: 30px;
     }
 
     .sidebar-logo img{
@@ -292,16 +313,16 @@ footer{
     }
 
     .content-body{
-        height: 68vh;
+        height: 77vh;
     }
 
 
 
     .content-body h1{
-        font-size: 5vw;
+        font-size: 3.5vw;
     }
     .content-body h5{
-        font-size: 4vw;
+        font-size: 2vw;
     }
 
     form{
@@ -329,6 +350,21 @@ footer{
 }
 @media only screen and (max-width: 600px) {
 
+    .user-credentials h5{
+        font-size: 3vw;
+        font-weight: 700;
+    }
+    .span-credentials{
+        font-size: 2vw;
+    }
+    .sidebar{
+        width: 75%;
+    }
+
+    .sidebar-header{
+        margin-bottom: 20px;
+    }
+
     .sidebar-logo img{
         width: 13vw;
     }
@@ -340,8 +376,30 @@ footer{
         font-size: 80%;
     }
 
+    .content-body h1{
+        font-size: 5vw;
+    }
+
+    .content-body h4{
+        font-size: 4vw;
+    }
+
+    .content-body h5{
+        font-size: 3vw;
+    }
+
+    .content-body p{
+        font-size: 2.5vw;
+    }
 }
 @media only screen and (max-width: 350px) {
+    .sidebar{
+        width: 90%;
+    }
+
+    .sidebar-header{
+        margin-bottom: 10px;
+    }
     .img-user{
         max-width: 40px;
         max-height: 40px;
@@ -353,6 +411,19 @@ footer{
     .span-credentials{
         font-size: 2.3vw;
     }
-    
+    .navbar a{
+        font-size: 55%;
+    }
 
+    footer h6{
+        font-size: 4vw;
+    }
+
+}
+
+@media only screen and (max-width: 250px) {
+    .img-user{
+        display: none;
+    }
+    
 }
