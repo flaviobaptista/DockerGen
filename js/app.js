@@ -111,9 +111,18 @@ function logoff() {
 
 function navBars(){
     let display = document.getElementById('sidebar').style.display;
-    if(display == "none"){
+    let iconBars = document.getElementById('bars-icon').style.display;
+    let btnClose = document.getElementById('btn-close-bar').style.display;
+
+    if(display == "none" && iconBars == "block" && btnClose == "none"){
         document.getElementById('sidebar').style.display= "block";
+        document.getElementById('bars-icon').style.display= "none";
+        document.getElementById('btn-close-bar').style.display= "block";
+
     }else{
         document.getElementById('sidebar').style.display= "none";
+        document.getElementById('bars-icon').style.display= "block";
+        document.getElementById('btn-close-bar').style.display= "none";
+
     }
 }

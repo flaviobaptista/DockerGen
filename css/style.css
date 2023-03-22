@@ -44,6 +44,32 @@ h1{
 	background-color: aqua;
 }
 
+.sidebar-header{
+    padding: 30px;
+    display: flex; 
+    align-items: start;
+    justify-content: space-between;
+    
+}
+.sidebar-header button{
+    display: none;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #01d0ff;
+}
+.sidebar-logo{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+}
+.sidebar-logo img{
+    width: 5vw;
+}
+.sidebar-logo h2{
+    font-size: 2vw;
+    color: aqua;
+}
+
 .navbar{
     text-align: start;
     color: aliceblue;
@@ -78,6 +104,7 @@ h1{
     width: 100%;
     color: aliceblue;
     text-decoration: none;
+    font-size: 1.5vw;
 }
 
 section {
@@ -181,6 +208,9 @@ input, select{
   input[type='file'] {
     display: none
   }
+  .content-logo img{
+    width: 90%
+  }
   
 
 /* Page Confidencialidade */
@@ -196,11 +226,6 @@ form section{
     align-items: start;
     justify-content: start;
 }
-
-/* #conteudo-pdf section{
-    text-align: center;
-} */
-
 
 
 
@@ -224,23 +249,95 @@ footer{
 @media only screen and (max-width: 900px) {
     .sidebar{
         display: none;
+        position: fixed;
+        z-index: 1000;
+        width: 85%;
     }
 
     .user-credentials{
-        margin-left: 40px;
+        margin-left: 65px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-user{
+        max-width: 80%;
+        max-height: 80%;
+    }
+    .user-credentials h5{
+        font-size: 3vw;
+        font-weight: 700;
+    }
+    .span-credentials{
+        font-size: 2vw;
+    }
+
+    .sidebar-logo img{
+        width: 9vw;
+    }
+    .sidebar-logo h2{
+        font-size: 4vw;
     }
     .nv-icon{
         display: flex;
         justify-content: center;
         border: solid 1px rgb(53, 99, 168);
-        padding: 5px 15px 5px 15px;
+        padding: 10px 15px 10px 15px;
         border-radius: 10px;
         color: #0099ff;
     }
 
+    .navbar a{
+        font-size: 2.2vw;
+    }
+
+    .content-body{
+        height: 68vh;
+    }
+
+
+
+    .content-body h1{
+        font-size: 5vw;
+    }
+    .content-body h5{
+        font-size: 4vw;
+    }
+
+    form{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .content-logo{
+        width: 40%;
+        height: 40%;
+    }
+
+    .content-body hr{
+        display: none;
+    }
+    .content-body button{
+        width: 100%;
+    }
 
     footer{
         width: 100%;
+        text-align: center;
     }
+
     
+}
+@media only screen and (max-width: 600px) {
+
+    .sidebar-logo img{
+        width: 13vw;
+    }
+    .sidebar-logo h2{
+        font-size: 6vw;
+    }
+
+    .navbar a{
+        font-size: 80%;
+    }
+
 }
