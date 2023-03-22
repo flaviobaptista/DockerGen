@@ -10,8 +10,8 @@ font-family: 'Unbounded', cursive; */
 body{
     padding: 0;
     margin: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+    display: flex;
     height: 100vh;
     width: 100vw;
     color:#ffffff;
@@ -23,13 +23,16 @@ body{
 .logo-pglogin{
     display: flex;
     align-items: center;
-    padding: 10px;
+}
+.logo-pglogin img{
+    width: 70px;
 }
 .logo-pglogin h1{
     margin-left: 10px;
 }
 .content{
     width: 60vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,11 +51,17 @@ img{
     background-color: #1a1919;
 }
 
+.form-content h2 {
+    text-transform: uppercase;
+    font-size: 25px;
+    color: aqua;
+    font-family: 'Unbounded', cursive;
+}
+
 article{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
 }
 h1{
     color: aqua;
@@ -62,25 +71,24 @@ h2{
     letter-spacing: 3px;
     font-family: 'Prompt', sans-serif;
     text-transform: uppercase;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
+    text-align: center;
 }
 h3{
-    font-size: 17pt;
+    font-size: 1.6vw;
     font-weight: 700;
     font-family: 'Prompt', sans-serif;
 }
 h4{
-    width: 700px;
-    font-size: 15pt;
+    font-size: 1.5vw;
     font-family: 'Prompt', sans-serif;
-    margin: 0;
 }
 li{
-    font-size: 14pt;
+    font-size: 1.5vw;
     font-family: 'Prompt', sans-serif;
 }
 input{
-    width: 300px;
+    width: 70%;
     border: none;
     border-bottom: solid 1px aqua;
     padding: 9px;
@@ -105,7 +113,6 @@ input:focus{
 button{
     width: 200px;
     padding: 10px;
-    margin-top: 10px;
     border-radius: 15px;
     background-color: aqua;
     cursor: pointer;
@@ -134,6 +141,16 @@ a:hover{
 }
 
 @media only screen and (max-width: 900px) {
+    .logo-pglogin{
+        justify-content: center;
+        width: 100%;
+    }
+    .logo-pglogin img{
+        width: 10%;
+    }
+
+}
+@media only screen and (max-width: 600px) {
     body{
         display: flex;
         flex-direction: column;
@@ -144,32 +161,67 @@ a:hover{
         align-items: center;
         justify-content: center;
         width: 100%;
-        height: 100%;
-
+        height: 50%;
+        
     }
-    .form-content{
-        width: 100%;
-        height: 100%;
+
+    .logo-pglogin{
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .logo-pglogin img{
+        width: 10%;
+    }
+
+    h1{
+        font-size: 4vw;
     }
 
     h2{
-        font-size: 4vw;
+        font-size: 2vw;
         text-align: center;
     }
     h3{
-        font-size: 5vw;
+        display: none;
+        font-size: 2vw;
     }
 
     h4{
-        font-size: 4vw;
+        display: none;
+        font-size: 2vw;
         width: 90%;
     }
+
+    ul{
+        display: none;
+    }
     li{
-        font-size: 3vw;
+        font-size: 2vw;
     }
     img{
-        width: 55vw;
+        width: 30vw;
     }
+
+    .form-content{
+        width: 100%;
+    }
+
+    input{
+        width: 60%;
+        font-size: 15px;
+    }
+
+    .form-content h2{
+        font-size: 20px;
+    }
+
+    .form-content button{
+        width: 50%;
+        padding: 5px;
+        font-size: 17px;
+    }
+
+
 
 
 

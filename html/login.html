@@ -13,7 +13,7 @@
 <body>
     <div class="content">
         <div class="logo-pglogin">
-            <img src="../img/logo.png" alt="Logo" style="width: 70px;">
+            <img src="../img/logo.png" alt="Logo">
             <h1>DockerGen</h1>
         </div>
         <h2>uma poderosa ferramenta para geração de documentos</h2>
@@ -29,19 +29,21 @@
                 </ul>
             </div>
         </article>
-        <h4>Fácil de usar e permite que você crie documentos personalizados de forma rápida e eficiente, sem precisar se
-            preocupar com a formatação ou disposição do conteúdo.</h4>
+        <div style="width: 90%;">
+            <h4>Fácil de usar e permite que você crie documentos personalizados de forma rápida e eficiente, sem precisar se
+                preocupar com a formatação ou disposição do conteúdo.</h4>
+        </div>
 
     </div>
     <form class="form-content" id="formulariolog">
-        <h1 style="text-transform: uppercase; font-size: 20pt;">login</h1>
+        <h2>login</h2>
         <br><br>
         <input type="email" placeholder="Usuário" id="user">
         <br><br>
         <input type="password" placeholder="Senha" id="password">
         <br><br><br>
         <!-- <a href="#">Esqueci minha Senha</a> -->
-        <br><br>
+        
         <button type="button" onclick="validarLogin()">Entrar</button>
         <br>
         <span id="false-log"></span>
