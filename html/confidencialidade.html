@@ -58,20 +58,26 @@
                             LGPD
                         </a>
                     </li>
+                    <li>
+                        <a href="usuario.html">
+                            <i class="fa-sharp fa-solid fa-user" style="margin-right: 20px; color: aqua; "></i>
+                            Usuário
+                        </a>
                 </ul>
             </div>
         </div>
 
-
         <section>
             <header>
                 <div id="bars-icon" style="position: fixed;">
-                    <button type="button" class="nv-icon"  onclick="navBars()">
+                    <button type="button" class="nv-icon" onclick="navBars()">
                         <i class="fa-solid fa-bars" style="font-size: 20px;"></i>
                     </button>
                 </div>
                 <section class="user-credentials" style="display: flex; align-items: center;">
-                    <div class="img-user"></div>
+                    <div class="img-user">
+                        <img id="imgUser" class="imgUser" src="../img/user.png" alt="Usuario">
+                    </div>
                     <h5>Laura Sophia Miller <br> <span class="span-credentials">Coordenadora Administrativa</span> </h5>
                 </section>
                 <button class="exit" onclick="logoff()">
@@ -107,26 +113,27 @@
                         <input type="text" id="profissao" onchange="gerarDoc()">
                         <label>CPF</label>
                         <input type="text" id="cpf" onchange="gerarDoc()">
-                        
+
                     </section>
                     <section>
-                        <label>Local</label>
+                        <label>Cidade</label>
                         <input type="text" id="local" onchange="gerarDoc()">
                         <label>Data</label>
-                        <input type="date" id="data"  onchange="gerarDoc()">
+                        <input type="date" id="data" onchange="gerarDoc()">
                         <label>Logo da Empresa</label>
                         <div class="content-logo">
                             <img src="../img/logo.png" alt="Logo da empresa" id="imgLogo2">
 
                             <label class="label-file" for="logo">Escolher arquivo</label>
                         </div>
-                        <input  type="file" id="logo" onchange="visualizarLogo()">
+                        <input type="file" id="logo" onchange="visualizarLogo()">
                         <span class="text-danger">Recomendamos imagens 250 x 250 px</span>
                     </section>
                     <hr>
                     <hr>
                 </form>
-                <div class="container" style="text-align: center;"><button class="btn-sistema" type="button" id="btn_imp" onclick="abrirpdf()">Gerar PDF</button></div>
+                <div class="container" style="text-align: center;"><button class="btn-sistema" type="button"
+                        id="btn_imp" onclick="abrirpdf()">Gerar PDF</button></div>
 
                 <div id="conteudo-pdf" style="font-family: Arial, Helvetica, sans-serif; display:none ;">
                     <section style="text-align: center;">
@@ -179,6 +186,7 @@
 
 
     <script src="../js/app.js"></script>
+    <script src="../js/confidencialidade.js"></script>
 
 </body>
 

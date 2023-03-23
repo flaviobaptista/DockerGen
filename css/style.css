@@ -132,11 +132,16 @@ header span {
     width: 80px;
     height:80px;
     margin-right: 10px;
-    background-color: rgb(170, 170, 170);
+    background-color: rgb(51, 51, 51);
     border-radius: 50%;
-    background-image: url(../img/Laura_Sophia_Miller.jpg);
+    /* background-image: url(../img/Laura_Sophia_Miller.jpg); */
     background-position: center;
     background-size: cover;
+    border: none;
+}
+.imgUser{
+    width: 100%;
+    z-index: 1000;
 }
 
 .exit{
@@ -198,6 +203,11 @@ input, select{
     
 }
 
+.selectMes{
+    padding: 5px;
+
+}
+
 .content-logo{
     width: 250px; 
     height: 250px; 
@@ -229,8 +239,8 @@ input, select{
 /* Page Confidencialidade */
 
 form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: row;
     
 }
 form section{
@@ -244,7 +254,22 @@ form section{
 
 /* ---------------------------------- */
 
+/* Page Declaração */
 
+.time-content{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 80%;
+}
+
+
+.time-span{
+    padding: 5px 20px 3px 10px;
+    text-align: start;
+}
+
+/* ---------------------------------- */
 
 footer{
     display: flex;
@@ -326,10 +351,13 @@ footer{
     }
 
     form{
-        grid-template-columns: repeat(1, 1fr);
-        
+        flex-direction: column;
+    }
+    input, select{
+        width: 100%;
     }
     .content-logo{
+        justify-content: center;
         width: 40%;
         height: 40%;
     }
@@ -338,13 +366,13 @@ footer{
         display: none;
     }
     .content-body button{
+        margin-top: 20px;
         width: 100%;
     }
 
     footer{
         width: 100%;
         text-align: center;
-        z-index: 1000;
     }
 
     
@@ -391,6 +419,10 @@ footer{
 
     .content-body p{
         font-size: 2.5vw;
+    }
+
+    .time-content{
+        width: 100%;
     }
 }
 @media only screen and (max-width: 350px) {

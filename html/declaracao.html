@@ -58,23 +58,27 @@
                             LGPD
                         </a>
                     </li>
+                    <li>
+                        <a href="usuario.html">
+                            <i class="fa-sharp fa-solid fa-user" style="margin-right: 20px; color: aqua; "></i>
+                            Usuário
+                        </a>
                 </ul>
             </div>
         </div>
 
-
-
-
-
         <section id="confident">
             <header>
                 <div id="bars-icon" style="position: fixed;">
-                    <button type="button" class="nv-icon"  onclick="navBars()">
+                    <button type="button" class="nv-icon" onclick="navBars()">
                         <i class="fa-solid fa-bars" style="font-size: 20px;"></i>
                     </button>
                 </div>
                 <section class="user-credentials" style="display: flex; align-items: center;">
-                    <div class="img-user"></div>
+                    <div class="img-user">
+                        <img id="imgUser" class="imgUser" src="../img/user.png" alt="Usuario">
+                    </div>
+                    <!-- <div class="img-user"></div> -->
                     <h5>Laura Sophia Miller <br> <span class="span-credentials">Coordenadora Administrativa</span> </h5>
                 </section>
                 <button class="exit" onclick="logoff()">
@@ -83,12 +87,148 @@
             </header>
             <div class="content-body">
                 <h1>
-                    Declaração
+                    Termo de Responsabilidade
                 </h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore nam minima nemo vel molestiae ipsam
-                    sed, sequi recusandae dignissimos eius eveniet modi, officia quas optio iusto ullam blanditiis aut
-                    tempora nisi consectetur qui quae vitae nulla voluptate! Quibusdam necessitatibus atque cum maxime,
-                    asperiores in? Expedita non dolores quis rem dolor.</p>
+                <h5>Preencha o formulário abaixo para gerar o documento.</h5>
+                <br>
+                <form>
+                    <section>
+                        <label>Nome</label>
+                        <input type="text" id="nome" onchange="gerarDoc()">
+                        <label>Nacionalidade</label>
+                        <select id="nacionalidade" onchange="gerarDoc()">
+                            <option value="Selecione a Nacionalidade">--Selecionar--</option>
+                            <option value="brasileiro(a)">brasileiro(a)</option>
+                            <option value="portuguesa(a)">portugues(a)</option>
+                        </select>
+                        <label>Estado civil</label>
+                        <select id="estadoCivil" onchange="gerarDoc()">
+                            <option value="Selecione o estado civil">--Selecionar--</option>
+                            <option value="Solteiro (a)">Solteiro (a)</option>
+                            <option value="Casado (a)">Casado (a)</option>
+                            <option value="Divorciado (a)">Divorciado (a)</option>
+                            <option value="Viúvo (a)">Viúvo (a)</option>
+                            <option value="Separado judicialmente">Separado judicialmente</option>
+                        </select>
+                        <label>Profissão</label>
+                        <input type="text" id="profissao" onchange="gerarDoc()">
+                        <label>CPF</label>
+                        <input oninput="mascaraCpf(this)" type="text" id="cpf" onchange="gerarDoc()">
+                        <label>Pis</label>
+                        <input type="text" id="pis" onchange="gerarDoc()">
+                        <label>Data da contratação</label>
+                        <input type="date" id="dataCont" onchange="gerarDoc()">
+                        <label>Carga horária</label>
+                        <div class="time-content">
+                            <input type="time" class="time1" id="time1" onchange="gerarDoc()">
+                            <span class="time-span">às</span>
+                            <input type="time" class="time2" id="time2" onchange="gerarDoc()">
+                        </div>
+                    </section>
+                    <section>
+                        <label>Nome da empresa</label>
+                        <input type="text" id="nomeEmp" onchange="gerarDoc()">
+                        <label>CNPJ</label>
+                        <input oninput="mascaraCnpj(this)" type="text" id="cnpj" onchange="gerarDoc()">
+                        <label>Cidade</label>
+                        <input type="text" id="local" onchange="gerarDoc()">
+                        <label>Data do Documento</label>
+                        <div class="time-content">
+                            <select class="selectMes" id="day" onchange="gerarDoc()">
+                                <option value="Selecione o dia">---Dia---</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            <select class="selectMes" id="month" onchange="gerarDoc()">
+                                <option value="Selecione o Mês">---Mês---</option>
+                                <option value="Janeiro">Janeiro</option>
+                                <option value="Fevereiro">Fevereiro</option>
+                                <option value="Março">Março</option>
+                                <option value="Abril">Abril</option>
+                                <option value="Maio">Maio</option>
+                                <option value="Junho">Junho</option>
+                                <option value="Julho">Julho</option>
+                                <option value="Agosto">Agosto</option>
+                                <option value="Setembro">Setembro</option>
+                                <option value="Outubro">Outubro</option>
+                                <option value="Novembro">Novembro</option>
+                                <option value="Dezembro">Dezembro</option>
+                            </select>
+                            <select class="selectMes" id="year" onchange="gerarDoc()">
+                                <option value="2023">2023</option>
+                            </select>
+                        </div>
+                        <label>Logo da Empresa</label>
+                        <div class="content-logo">
+                            <img src="../img/logo.png" alt="Logo da empresa" id="imgLogo2">
+
+                            <label class="label-file" for="logo">Escolher arquivo</label>
+                        </div>
+                        <input type="file" id="logo" onchange="visualizarLogo()">
+                        <span class="text-danger">Recomendamos imagens 250 x 250 px</span>
+                    </section>
+                    <hr>
+                    <hr>
+                </form>
+                <div class="container" style="text-align: center;"><button class="btn-sistema" type="button"
+                        id="btn_imp" onclick="abrirpdf()">Gerar PDF</button></div>
+
+                <div id="conteudo-pdf" style="font-family: Arial, Helvetica, sans-serif; display: none;">
+                    <section style="text-align: center;">
+                        <img src="#" alt="Logo da empresa" id="imgLogo" style="width: 150px;">
+                        <br><br>
+                        <h5 style="font-size: 14pt;">TERMO DE RESPONSABILIDADE</h5>
+                        <br><br><br>
+                    </section>
+                    <p style="font-size: 12pt;"> Em nome da empresa<span id="dockgen1"></span>
+                        <br><br> Por fim, declaro ter plena ciência que é crime, nos termos do Código Penal, "omitir, em
+                        documento público ou particular, declaração que dele devia constar, ou nele inserir ou fazer
+                        inserir declaração falsa ou diversa da que deveria ser escrita, com fim de prejudicar direito,
+                        criar obrigação ou alterar a verdade sobre fato juridicamente relevante." (Art. 299 CP).
+                        <br><br>
+                        Por ser esta a expressão da verdade, firmo a presente declaração.
+                        <br><br>
+                        <span id="dockgen2">
+                        </span>
+                        <br><br><br><br><br>
+                    <section style="border-top: 1px solid
+                         black; width: 500px;"></section>
+                    <span id="dockgen3"></span>
+                    <br><br><br><br><br><br><br><br><br>
+
+                    </p>
+
+                </div>
+
             </div>
             <footer>
                 <h6> Desenvolvido por <cite>Flávio P. Baptista</cite> em <strong>2023</strong></h6>
@@ -97,6 +237,7 @@
     </div>
 
     <script src="../js/app.js"></script>
+    <script src="../js/declaracao.js"></script>
 
 </body>
 
