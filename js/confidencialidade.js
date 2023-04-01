@@ -19,3 +19,18 @@ function gerarDoc() {
     document.getElementById("dockgen3").innerHTML = "<strong> Assinatura: <br> </strong>" + nome;
 
 };
+
+function mascaraCpf(i){
+   
+    let v = i.value;
+    
+    if(isNaN(v[v.length-1])){ 
+       i.value = v.substring(0, v.length-1);
+       return;
+    }
+    
+    i.setAttribute("maxlength", "14");
+    if (v.length == 3 || v.length == 7) i.value += ".";
+    if (v.length == 11) i.value += "-";
+ 
+ }
