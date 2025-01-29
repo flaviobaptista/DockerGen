@@ -113,6 +113,10 @@
                         <input type="text" id="profissao" onchange="gerarDoc()">
                         <label>CPF</label>
                         <input oninput="mascaraCpf(this)" type="text" id="cpf" onchange="gerarDoc()">
+                        <label>Empresa</label>
+                        <input type="text" id="empresa"  onchange="gerarDoc()">
+                        <label>CNPJ</label>
+                        <input type="text" id="cnpj" oninput="this.value = formatarCNPJ(this.value)" onchange="gerarDoc()">
 
                     </section>
                     <section>
